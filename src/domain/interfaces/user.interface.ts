@@ -1,12 +1,12 @@
-import { Iproject } from './project.interface';
+import { IProject } from './project.interface';
 import { ITask } from './task.interface';
 
 export class IUser {
   id: number;
-  firstname: string;
-  lastname: string;
+  firstName: string;
+  lastName: string;
   email: string;
   password: string;
-  projects: Iproject[];
+  projects: IProject[];
   tasks: ITask[];
 }

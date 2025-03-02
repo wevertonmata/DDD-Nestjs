@@ -1,11 +1,11 @@
-import { Iproject } from '../interfaces/project.interface';
+import { IProject } from '../interfaces/project.interface';
 import { ITask } from '../interfaces/task.interface';
 import { IUser } from '../interfaces/user.interface';
 
-export class User implements Iproject {
+export class Tasks implements ITask {
   id: number;
   name: string;
-  description: string;
-  tasks: ITask[];
-  users: IUser;
+  status: 'pending' | 'completed';
+  project: IProject;
+  user: IUser;
 }
